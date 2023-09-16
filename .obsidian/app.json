@@ -2,5 +2,11 @@
   "newFileLocation": "folder",
   "newFileFolderPath": "content",
   "attachmentFolderPath": "content",
-  "showUnsupportedFiles": true
+  "showUnsupportedFiles": false,
+  "userIgnoreFilters": [
+    "docs/",
+    "quartz/",
+    "CODE_OF_CONDUCT",
+    "README"
+  ]
 }

@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "511af22e001bbef4",
+        "id": "b980f0b2c7c43fc3",
         "type": "tabs",
         "children": [
           {
-            "id": "5fc70c99505ef362",
+            "id": "916269abf7f9fcb1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/index.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/index.md",
+                "file": "docs/authoring content.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/index.md",
+                "file": "docs/authoring content.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +121,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/index.md"
+                "file": "docs/authoring content.md"
               }
             }
           }
@@ -146,14 +142,14 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "5fc70c99505ef362",
+  "active": "8059e6b0d5311373",
   "lastOpenFiles": [
     "CODE_OF_CONDUCT.md",
+    "README.md",
     "content/index.md",
     "docs/index.md",
     "content/무제 폴더",
     "content/무제 폴더 1",
-    "README.md",
     "docs/upgrading.md"
   ]
 }
