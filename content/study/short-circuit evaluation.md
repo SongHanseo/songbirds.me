@@ -96,7 +96,7 @@ and 연산의 진리표를 봅시다. `A && B`는 다음과 같은 값을 가집
 | **`true`** | `true` | `false` |
 | **`false`** | `false` | `false` |
 
-`A`가 `false`인 경우, `B`의 값과 관계없이 결과값은 `false`가 됩니다. shot-circuit evaluation에서는 이를 이용하여 만약 `A`를 평가한 결과가 `false`라면, `A && B`는 **곧바로 `false`를 반환합니다.** `or`연산에서도 비슷한 방식으로 `A`가 `true`라면 곧바로 `true`를 반환합니다.
+`A`가 `false`인 경우, `B`의 값과 관계없이 결과값은 `false`가 됩니다. short-circuit evaluation에서는 이를 이용하여 만약 `A`를 평가한 결과가 `false`라면, `A && B`는 **곧바로 `false`를 반환합니다.** `or`연산에서도 비슷한 방식으로 `A`가 `true`라면 곧바로 `true`를 반환합니다.
 
 위의 오답 코드를 다시 봅시다. 만약 `init(node*2, s, (s+e)/2)`가 `false`를 반환한다면, 결과는 반드시 `false`가 되므로, **우항의 `init(node*2+1, (s+e)/2+1, e)`는 평가되지 않습니다(즉 실행되지 않습니다).** 따라서 이 부분에 대한 초기화가 진행되지 않게 됩니다.
 

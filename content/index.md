@@ -1,7 +1,7 @@
 ---
 title: takeoff.
 ---
-안녕하세요. songbirds라는 핸들을 주로 사용합니다. 백준에서는 [hssong](https://solved.ac/profile/hssong)이라는 핸들을 사용합니다.
+안녕하세요. songbirds라는 핸들을 주로 사용합니다. BOJ에서는 [hssong](https://solved.ac/profile/hssong)이라는 핸들을 사용합니다.
 
 Songbirds 진짜 갓곡입니다. Homecomings 최고임 이거 보여주려고 어그로 끌었다
 
