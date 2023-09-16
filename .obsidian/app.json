@@ -1,7 +1,7 @@
 {
   "newFileLocation": "folder",
   "newFileFolderPath": "content",
-  "attachmentFolderPath": "content",
+  "attachmentFolderPath": "content/static",
   "showUnsupportedFiles": false,
   "userIgnoreFilters": [
     "docs/",
@@ -10,5 +10,8 @@
     "README",
     "node_modules/"
   ],
-  "promptDelete": false
+  "promptDelete": false,
+  "strictLineBreaks": true,
+  "autoPairMarkdown": false,
+  "spellcheck": false
 }

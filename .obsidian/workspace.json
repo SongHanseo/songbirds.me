@@ -8,32 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "916269abf7f9fcb1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/study/short-circuit evaluation.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "f3f91181a54045d1",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
-            }
-          },
-          {
-            "id": "7ab64bd209323a4f",
-            "type": "leaf",
-            "state": {
               "type": "markdown",
               "state": {
-                "file": "content/algorithms/segment tree.md",
+                "file": "content/index.md",
                 "mode": "source",
                 "source": false
               }
@@ -105,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/study/short-circuit evaluation.md",
+                "file": "content/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/study/short-circuit evaluation.md",
+                "file": "content/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/study/short-circuit evaluation.md"
+                "file": "content/index.md"
               }
             }
           }
@@ -167,9 +147,16 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "916269abf7f9fcb1",
+  "active": "f3f91181a54045d1",
   "lastOpenFiles": [
+    "content/study/short-circuit evaluation.md",
+    "content/static/Pasted image 20230916153403.png",
     "content/algorithms/segment tree.md",
+    "content/study",
+    "content/index.md",
+    "content/static",
+    "content/algorithms",
+    "content",
     "public/404.html",
     "public/images/Pasted-image-20230916153403.png",
     "public/images",
@@ -179,12 +166,6 @@
     "public/static",
     "public/index.xml",
     "public/sitemap.xml",
-    "public/tags/cpp.html",
-    "public/tags/boj.html",
-    "public/tags/index.html",
-    "public/tags/algorithm.html",
-    "content/index.md",
-    "content/study/short-circuit evaluation.md",
     "node_modules/decimal.js/README.md",
     "node_modules/decimal.js/LICENCE.md",
     "node_modules/is-extendable/README.md",
@@ -194,7 +175,6 @@
     "node_modules/is-extglob/README.md",
     "node_modules/comma-separated-tokens/readme.md",
     "content/세그먼트 트리.md",
-    "content/images/Pasted image 20230916153403.png",
     "node_modules/speech-rule-engine/bin/README.md",
     "node_modules/dequal/readme.md",
     "node_modules/cli-spinner/img/spinner.gif",
