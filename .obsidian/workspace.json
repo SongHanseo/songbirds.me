@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/sap-jil monogatari/short-circuit evaluation.md",
+                "file": "content/study/short-circuit evaluation.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/sap-jil monogatari/short-circuit evaluation.md",
+                "file": "content/study/short-circuit evaluation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/sap-jil monogatari/short-circuit evaluation.md",
+                "file": "content/study/short-circuit evaluation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/sap-jil monogatari/short-circuit evaluation.md"
+                "file": "content/study/short-circuit evaluation.md"
               }
             }
           }
@@ -197,7 +197,7 @@
     "node_modules/is-extglob/README.md",
     "node_modules/comma-separated-tokens/readme.md",
     "content/algorithms/segment tree.md",
-    "content/sap-jil monogatari/short-circuit evaluation.md",
+    "content/study/short-circuit evaluation.md",
     "content/세그먼트 트리.md",
     "content/index.md",
     "content/images/Pasted image 20230916153403.png",
