@@ -146,12 +146,14 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "8059e6b0d5311373",
+  "active": "5fc70c99505ef362",
   "lastOpenFiles": [
-    "README.md",
+    "docs/index.md",
+    "content/무제 폴더",
     "content/index.md",
+    "content/무제 폴더 1",
+    "README.md",
     "CODE_OF_CONDUCT.md",
-    "docs/upgrading.md",
-    "docs/index.md"
+    "docs/upgrading.md"
   ]
 }
