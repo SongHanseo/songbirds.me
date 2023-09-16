@@ -11,11 +11,40 @@
             "id": "916269abf7f9fcb1",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "content/index.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f3f91181a54045d1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/sap-jil monogatari/short-circuit evaluation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7ab64bd209323a4f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/algorithms/segment tree.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -65,7 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "4c37ac78f2767088",
@@ -81,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/authoring content.md",
+                "file": "content/sap-jil monogatari/short-circuit evaluation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/authoring content.md",
+                "file": "content/sap-jil monogatari/short-circuit evaluation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -121,11 +150,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/authoring content.md"
+                "file": "content/sap-jil monogatari/short-circuit evaluation.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -142,14 +172,50 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "8059e6b0d5311373",
+  "active": "f3f91181a54045d1",
   "lastOpenFiles": [
-    "CODE_OF_CONDUCT.md",
-    "README.md",
+    "public/404.html",
+    "public/images/Pasted-image-20230916153403.png",
+    "public/images",
+    "public/static/og-image.png",
+    "public/static/icon.png",
+    "public/static/contentIndex.json",
+    "public/static",
+    "public/index.xml",
+    "public/sitemap.xml",
+    "public/tags/index.html",
+    "public/tags/cpp.html",
+    "public/tags/boj.html",
+    "public/tags/algorithm.html",
+    "public/tags",
+    "node_modules/decimal.js/README.md",
+    "node_modules/decimal.js/LICENCE.md",
+    "node_modules/is-extendable/README.md",
+    "node_modules/run-parallel/README.md",
+    "node_modules/dir-glob/readme.md",
+    "node_modules/merge2/README.md",
+    "node_modules/is-extglob/README.md",
+    "node_modules/comma-separated-tokens/readme.md",
+    "content/algorithms/segment tree.md",
+    "content/sap-jil monogatari/short-circuit evaluation.md",
+    "content/세그먼트 트리.md",
     "content/index.md",
-    "docs/index.md",
-    "content/무제 폴더",
-    "content/무제 폴더 1",
-    "docs/upgrading.md"
+    "content/images/Pasted image 20230916153403.png",
+    "node_modules/speech-rule-engine/bin/README.md",
+    "node_modules/dequal/readme.md",
+    "node_modules/cli-spinner/img/spinner.gif",
+    "node_modules/data-urls/README.md",
+    "node_modules/@types/pretty-time/README.md",
+    "node_modules/@types/nlcst/README.md",
+    "node_modules/@types/ms/README.md",
+    "node_modules/@types/mdast/README.md",
+    "node_modules/@types/debug/README.md",
+    "node_modules/@types/d3-selection/README.md",
+    "node_modules/@types/d3-quadtree/README.md",
+    "node_modules/@types/d3-interpolate/README.md",
+    "node_modules/@types/d3-path/README.md",
+    "node_modules/@types/d3-chord/README.md",
+    "node_modules/psl/browserstack-logo.svg",
+    "docs/images/quartz layout.png"
   ]
 }

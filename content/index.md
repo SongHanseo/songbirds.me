@@ -2,9 +2,9 @@
 title: takeoff.
 ---
 
-안녕하세요. 하기입니다. songbirds라는 핸들을 주로 사용중입니다.
+안녕하세요. 하기입니다. songbirds라는 핸들을 주로 사용중입니다. 백준에서는 hssong이라는 핸들을 사용합니다.
 
-songbirds 진짜 갓곡입니다. 이거 보여주려고 어그로 끌었다
+Songbirds 진짜 갓곡입니다. Homecomings 최고임 이거 보여주려고 어그로 끌었다
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/f8D9-sa2piI" title="Homecomings - Songbirds（Official Music Video）" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
