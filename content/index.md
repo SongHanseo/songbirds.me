@@ -2,5 +2,5 @@
 title: takeoff.
 ---
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+여러가지 시도중입니다.
+현재 [Obsidian](https://obsidian.md)에서 편집하고 [Quartz](https://quartz.jzhao.xyz)를 이용해 GitHub Pages로 호스팅합니다.
