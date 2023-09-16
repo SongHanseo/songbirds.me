@@ -9,14 +9,14 @@ const config: QuartzConfig = {
     analytics: {
       provider: "plausible",
     },
-    baseUrl: "HanseoSong.github.io",
+    baseUrl: "songbirds.me",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "created",
     theme: {
       typography: {
         header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
-        code: "IBM Plex Mono",
+        body: "Gowun Batang",
+        code: "Nanum Gothic Coding",
       },
       colors: {
         lightMode: {
