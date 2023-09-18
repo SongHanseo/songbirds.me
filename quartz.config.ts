@@ -3,7 +3,7 @@ import * as Plugin from "./quartz/plugins"
 
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "songbirds using Quartz 4.0",
+    pageTitle: "songbirds.me",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
@@ -14,7 +14,7 @@ const config: QuartzConfig = {
     defaultDateType: "created",
     theme: {
       typography: {
-        header: "Schibsted Grotesk",
+        header: "Hahmlet",
         body: "Gowun Batang",
         code: "Nanum Gothic Coding",
       },
