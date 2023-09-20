@@ -6,9 +6,10 @@ const config: QuartzConfig = {
     pageTitle: "songbirds.me",
     enableSPA: true,
     enablePopovers: true,
-    analytics: {
-      provider: "plausible",
-    },
+    // analytics: {
+    //   // provider: "plausible",
+    // },
+    analytics: null,
     baseUrl: "songbirds.me",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "created",

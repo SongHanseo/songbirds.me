@@ -91,10 +91,12 @@ bool init(int node, int s, int e){
 ## short-circuit evaluation
 and 연산의 진리표를 봅시다. `A && B`는 다음과 같은 값을 가집니다.
 
-| `A`\\`B` | **`true`** | **`false`** |
+| `A` | `B` | `A && B` |
 | --- | --- | --- |
-| **`true`** | `true` | `false` |
-| **`false`** | `false` | `false` |
+| `true` | `true` | `true` |
+| `true` | `false` | `false` |
+| `false` | `true` | `false` |
+| `false` | `false` | `false` |
 
 `A`가 `false`인 경우, `B`의 값과 관계없이 결과값은 `false`가 됩니다. short-circuit evaluation에서는 이를 이용하여 만약 `A`를 평가한 결과가 `false`라면, `A && B`는 **곧바로 `false`를 반환합니다.** `or`연산에서도 비슷한 방식으로 `A`가 `true`라면 곧바로 `true`를 반환합니다.
 
