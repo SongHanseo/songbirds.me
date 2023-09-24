@@ -7,7 +7,7 @@ tags:
 8월 20일 [icpc 신촌 2023 여름 캠프 컨테스트](https://www.instagram.com/p/CwytRGnvzW_)가 열렸습니다. 저는 감사하게도 그날 컨디션이 좋아서 중급에 참여해 4등을 기록했습니다. 오우 땡스갓
 
 열린지 한 달 다 돼 가는데 이렇게 늦게 회고라도 쓰려는 거냐? 아닙니다. 다만 한가지 삽질했던게 있어서 늦게나마 글로 남겨두려고 합니다. 
-## 문제
+# 문제
 [문제의 문제: 편광판(BOJ 28475)](https://boj.kr/28475)
 
 중급 F번으로 등장한 문제입니다. 6틀 후 7번째 시도에서 AC를 받았습니다.
@@ -88,7 +88,7 @@ bool init(int node, int s, int e){
 
 문제를 파악하기 위해서는 `and`의 작동을 알아야 할 필요가 있습니다. [cpp reference](https://en.cppreference.com/w/cpp/language/operator_logical)에 따르면 `&&`(또는 `and`)와 `||`(또는 `or`)는 [**단락 평가**<sub>short-circuit evaluation</sub>](https://en.wikipedia.org/wiki/Short-circuit_evaluation)를 수행합니다. 이게 뭘까요?
 
-## short-circuit evaluation
+# short-circuit evaluation
 and 연산의 진리표를 봅시다. `A && B`는 다음과 같은 값을 가집니다.
 
 | `A` | `B` | `A && B` |
@@ -104,7 +104,7 @@ and 연산의 진리표를 봅시다. `A && B`는 다음과 같은 값을 가집
 
 만약 init이 Side Effect가 없는 함수였다면 아무런 상관이 없었을 겁니다.(예를 들어, 아래의 `query`함수는 Side Effect가 없으므로 이런 방식으로 작성해도 생각한대로 작동합니다.)
 
-## 해결
+# 해결
 10분간의 고민 끝에 7번째 제출에서는 `init`을 다음과 같이 수정했습니다.
 ```cpp
 bool init(int node, int s, int e){

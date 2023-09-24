@@ -22,3 +22,11 @@ iframe {
 .overflow::after {
     display: none;
 }
+
+article > h1 {
+    font-size: 1.75rem !important;
+}
+
+.article-title {
+    font-size: 2rem;
+}
