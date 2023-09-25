@@ -23,4 +23,4 @@ $$
 $$
 이 성립함이 알려져 있습니다.
 
-특히 $2\times 2$행렬을 예로 들면, $A=\begin{bmatrix}a&b\\c&d\end{bmatrix}$에 대해서 $adj(A)=\begin{bmatrix}d&-b\\-c&a\end{bmatrix}$이고, $A$가 정칙행렬이라면 $A^{-1}=\displaystyle\frac1{det(A)}\begin{bmatrix}d&-b\\-c&a\end{bmatrix}$입니다.
+특히 $2\times 2$행렬을 예로 들면, $A=\begin{bmatrix}a&b\\c&d\end{bmatrix}$에 대해서 $adj(A)=\begin{bmatrix}d&-b\\-c&a\end{bmatrix}$이고, $A$가 정칙행렬이라면 $A^{-1}=\displaystyle\frac1{det(A)}adj(A)=\frac1{ad-bc}\begin{bmatrix}d&-b\\-c&a\end{bmatrix}$입니다.
