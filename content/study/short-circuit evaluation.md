@@ -3,6 +3,7 @@ title: "논리 연산자를 조심하세요: Short-circuit Evaluation이란? (BO
 tags:
   - boj
   - cpp
+date: 2023-09-16
 ---
 8월 20일 [icpc 신촌 2023 여름 캠프 컨테스트](https://www.instagram.com/p/CwytRGnvzW_)가 열렸습니다. 저는 감사하게도 그날 컨디션이 좋아서 중급에 참여해 4등을 기록했습니다. 오우 땡스갓
 

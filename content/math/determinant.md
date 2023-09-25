@@ -3,6 +3,7 @@ title: 행렬식
 tags:
   - math
   - linear_algebra
+date: 2023-09-25
 ---
 행렬식은 정방행렬에 스칼라를 대응시키는 함수입니다. $det(A)$, 또는 $|A|$와 같이 표시합니다.
 

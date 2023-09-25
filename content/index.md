@@ -1,5 +1,6 @@
 ---
 title: takeoff.
+date: 2023-09-16
 ---
 안녕하세요. songbirds라는 핸들을 주로 사용합니다. BOJ에서는 [hssong](https://solved.ac/profile/hssong)이라는 핸들을 사용합니다.
 
