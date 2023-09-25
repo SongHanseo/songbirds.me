@@ -4,13 +4,13 @@ tags:
   - math
   - linear_algebra
 ---
-행렬식은 정방행렬에 스칼라를 대응시키는 함수입니다. $detA$, 또는 $|A|$와 같이 표시합니다.
+행렬식은 정방행렬에 스칼라를 대응시키는 함수입니다. $det(A)$, 또는 $|A|$와 같이 표시합니다.
 
 # 구하는 방법
 ## 라이프니츠 공식
-어떤 행렬 $A=\begin{bmatrix} a_{ij} \end{bmatrix}_{1\leq i, j\leq n}$가 있을 때, $detA$의 값은 다음과 같습니다.
+어떤 행렬 $A=\begin{bmatrix} a_{ij} \end{bmatrix}_{1\leq i, j\leq n}$가 있을 때, $det(A)$의 값은 다음과 같습니다.
 $$
-detA=\sum_{\sigma\in Sym(n)}\left( sgn(\sigma)\prod_{i=1}^na_{i,\sigma(i)} \right)
+det(A)=\sum_{\sigma\in Sym(n)}\left( sgn(\sigma)\prod_{i=1}^na_{i,\sigma(i)} \right)
 $$
 여기서 $Sym(n)$은 [대칭군](https://ko.wikipedia.org/wiki/%EB%8C%80%EC%B9%AD%EA%B5%B0_(%EA%B5%B0%EB%A1%A0))을 의미합니다.
 
@@ -47,11 +47,11 @@ $$
 ### 여인수 전개
 여인수를 이용하여 $A$의 행렬식을 전개할 수 있습니다. 어떤 행 $i$행을 잡고 다음과 같이 전개합니다.
 $$
-detA=\sum_{k=1}^{n}a_{ik}C_{ik}
+det(A)=\sum_{k=1}^{n}a_{ik}C_{ik}
 $$
 혹은 다음과 같이 어떤 열 $j$열을 잡고 전개할 수도 있습니다.
 $$
-detA=\sum_{k=1}^{n}a_{kj}C_{kj}
+det(A)=\sum_{k=1}^{n}a_{kj}C_{kj}
 $$
 이렇게 임의의 행이나 열을 잡아 전개해도 항상 값이 같음이 알려져 있습니다.
 
