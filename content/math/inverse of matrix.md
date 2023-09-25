@@ -14,9 +14,9 @@ date: 2023-09-25
 어떤 정방행렬 $A$가 주어졌을 때, 이와 단위행렬$I$를 붙여 첨가행렬 $(A|I)$를 구성해줍니다. 그 후, 기본 행연산을 수행하여 좌측의 행렬을 단위행렬로 만들면, 우측의 행렬은 $A^{-1}$이 됩니다. 
 
 ## 고전적 수반 행렬
-고전적 수반 행렬<sub>adjugate matrix, 또는 classical adjoint matrix</sub>은 어떤 정방행렬의 [[determinant#여인수|여인수]]를 성분으로 가지는 여인수 행렬의 전치행렬입니다. 어떤 정방행렬 $A$의 고전적 수반 행렬을 $adj(A)$와 같이 씁니다. 즉,
+고전적 수반 행렬<sub>adjugate matrix, 또는 classical adjoint matrix</sub>은 어떤 정방행렬의 [[determinant#여인수|여인수]]를 성분으로 가지는 여인수 행렬 $C$의 전치행렬입니다. 어떤 정방행렬 $A$의 고전적 수반 행렬을 $adj(A)$와 같이 씁니다. 즉,
 $$
-adj(A)=C^T=\begin{bmatrix}(-1)^{i+j}M_{ij}\end{bmatrix}^T
+adj(A)_{ij}=(C^T)_{ij}=C_{ji}=(-1)^{i+j}M_{ji}
 $$
 입니다. 이때 정칙행렬 $A$에 대해 
 $$
