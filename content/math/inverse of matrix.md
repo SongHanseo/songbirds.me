@@ -16,7 +16,7 @@ date: 2023-09-25
 ## 고전적 수반 행렬
 고전적 수반 행렬<sub>adjugate matrix, 또는 classical adjoint matrix</sub>은 어떤 정방행렬의 [[determinant#여인수|여인수]]를 성분으로 가지는 여인수 행렬 $C$의 전치행렬입니다. 어떤 정방행렬 $A$의 고전적 수반 행렬을 $adj(A)$와 같이 씁니다. 즉,
 $$
-adj(A)_{ij}=(C^T)_{ij}=C_{ji}=(-1)^{i+j}M_{ji}
+adj(A)=C^T=[(-1)^{i+j}M_{ji}]^T
 $$
 입니다. 이때 정칙행렬 $A$에 대해 
 $$
