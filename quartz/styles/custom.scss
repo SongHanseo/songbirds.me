@@ -1,15 +1,25 @@
 @use "./base.scss";
 
 // put your custom CSS here!
-@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
 .page-title {
-    height: 35px;
-    font-family: 'Caveat', cursive;
-    font-size: 2.7rem;
-    display: flex;
-    a {
-        align-self: center;
+    display: inline-block;
+    > a {
+        width: 200px;
+        height: 50px;
+        display:inline-block;
+        overflow: hidden;
+    }
+    > a::before {
+        width: 200px;
+        height: 50px;
+        content: "";
+        background-color: var(--secondary);
+        mask-image: url("../static/banner.svg");
+        mask-repeat: no-repeat;
+        mask-position: center left;
+        mask-size: contain;
+        display: inline-block;
     }
 }
 
