@@ -8,6 +8,8 @@ Quartz features an explorer that allows you to navigate all files and folders on
 
 By default, it shows all folders and files on your page. To display the explorer in a different spot, you can edit the [[layout]].
 
+Display names for folders get determined by the `title` frontmatter field in `folder/index.md` (more detail in [[authoring content | Authoring Content]]). If this file does not exist or does not contain frontmatter, the local folder name will be used instead.
+
 > [!info]
 > The explorer uses local storage by default to save the state of your explorer. This is done to ensure a smooth experience when navigating to different pages.
 >
@@ -29,7 +31,7 @@ Component.Explorer({
   sortFn: (a, b) => {
     ... // default implementation shown later
   },
-  filterFn: undefined,
+  filterFn: filterFn: (node) => node.name !== "tags", // filters out 'tags' folder
   mapFn: undefined,
   // what order to apply functions in
   order: ["filter", "map", "sort"],
@@ -73,7 +75,12 @@ Every function you can pass is optional. By default, only a `sort` function will
 Component.Explorer({
   sortFn: (a, b) => {
     if ((!a.file && !b.file) || (a.file && b.file)) {
-      return a.displayName.localeCompare(b.displayName)
+      // sensitivity: "base": Only strings that differ in base letters compare as unequal. Examples: a ≠ b, a = á, a = A
+      // numeric: true: Whether numeric collation should be used, such that "1" < "2" < "10"
+      return a.displayName.localeCompare(b.displayName, undefined, {
+        numeric: true,
+        sensitivity: "base",
+      })
     }
     if (a.file && !b.file) {
       return 1
@@ -160,44 +167,17 @@ Component.Explorer({
 
 You can customize this by changing the entries of the `omit` set. Simply add all folder or file names you want to remove.
 
-## Advanced examples
+### Show every element in explorer
 
-### Add emoji prefix
-
-To add emoji prefixes (📁 for folders, 📄 for files), you could use a map function like this:
+To override the default filter function that removes the `tags` folder from the explorer, you can set the filter function to `undefined`.
 
 ```ts title="quartz.layout.ts"
 Component.Explorer({
-  mapFn: (node) => {
-    // dont change name of root node
-    if (node.depth > 0) {
-      // set emoji for file/folder
-      if (node.file) {
-        node.displayName = "📄 " + node.displayName
-      } else {
-        node.displayName = "📁 " + node.displayName
-      }
-    }
-  },
-}})
-```
-
-### Putting it all together
-
-In this example, we're going to customize the explorer by using functions from examples above to [[#Add emoji prefix | add emoji prefixes]], [[#remove-list-of-elements-filter| filter out some folders]] and [[#use-sort-to-put-files-first | sort with files above folders]].
-
-```ts title="quartz.layout.ts"
-Component.Explorer({
-  filterFn: sampleFilterFn,
-  mapFn: sampleMapFn,
-  sortFn: sampleSortFn,
-  order: ["filter", "sort", "map"],
+  filterFn: undefined, // apply no filter function, every file and folder will visible
 })
 ```
 
-Notice how we customized the `order` array here. This is done because the default order applies the `sort` function last. While this normally works well, it would cause unintended behavior here, since we changed the first characters of all display names. In our example, `sort` would be applied based off the emoji prefix instead of the first _real_ character.
-
-To fix this, we just changed around the order and apply the `sort` function before changing the display names in the `map` function.
+## Advanced examples
 
 > [!tip]
 > When writing more complicated functions, the `layout` file can start to look very cramped.
@@ -226,3 +206,101 @@ To fix this, we just changed around the order and apply the `sort` function befo
 >   sortFn: sortFn,
 > })
 > ```
+
+### Add emoji prefix
+
+To add emoji prefixes (📁 for folders, 📄 for files), you could use a map function like this:
+
+```ts title="quartz.layout.ts"
+Component.Explorer({
+  mapFn: (node) => {
+    // dont change name of root node
+    if (node.depth > 0) {
+      // set emoji for file/folder
+      if (node.file) {
+        node.displayName = "📄 " + node.displayName
+      } else {
+        node.displayName = "📁 " + node.displayName
+      }
+    }
+  },
+})
+```
+
+### Putting it all together
+
+In this example, we're going to customize the explorer by using functions from examples above to [[#Add emoji prefix | add emoji prefixes]], [[#remove-list-of-elements-filter| filter out some folders]] and [[#use-sort-to-put-files-first | sort with files above folders]].
+
+```ts title="quartz.layout.ts"
+Component.Explorer({
+  filterFn: sampleFilterFn,
+  mapFn: sampleMapFn,
+  sortFn: sampleSortFn,
+  order: ["filter", "sort", "map"],
+})
+```
+
+Notice how we customized the `order` array here. This is done because the default order applies the `sort` function last. While this normally works well, it would cause unintended behavior here, since we changed the first characters of all display names. In our example, `sort` would be applied based off the emoji prefix instead of the first _real_ character.
+
+To fix this, we just changed around the order and apply the `sort` function before changing the display names in the `map` function.
+
+### Use `sort` with pre-defined sort order
+
+Here's another example where a map containing file/folder names (as slugs) is used to define the sort order of the explorer in quartz. All files/folders that aren't listed inside of `nameOrderMap` will appear at the top of that folders hierarchy level.
+
+It's also worth mentioning, that the smaller the number set in `nameOrderMap`, the higher up the entry will be in the explorer. Incrementing every folder/file by 100, makes ordering files in their folders a lot easier. Lastly, this example still allows you to use a `mapFn` or frontmatter titles to change display names, as it uses slugs for `nameOrderMap` (which is unaffected by display name changes).
+
+```ts title="quartz.layout.ts"
+Component.Explorer({
+  sortFn: (a, b) => {
+    const nameOrderMap: Record<string, number> = {
+      "poetry-folder": 100,
+      "essay-folder": 200,
+      "research-paper-file": 201,
+      "dinosaur-fossils-file": 300,
+      "other-folder": 400,
+    }
+
+    let orderA = 0
+    let orderB = 0
+
+    if (a.file && a.file.slug) {
+      orderA = nameOrderMap[a.file.slug] || 0
+    } else if (a.name) {
+      orderA = nameOrderMap[a.name] || 0
+    }
+
+    if (b.file && b.file.slug) {
+      orderB = nameOrderMap[b.file.slug] || 0
+    } else if (b.name) {
+      orderB = nameOrderMap[b.name] || 0
+    }
+
+    return orderA - orderB
+  },
+})
+```
+
+For reference, this is how the quartz explorer window would look like with that example:
+
+```
+📖 Poetry Folder
+📑 Essay Folder
+    ⚗️ Research Paper File
+🦴 Dinosaur Fossils File
+🔮 Other Folder
+```
+
+And this is how the file structure would look like:
+
+```
+index.md
+poetry-folder
+    index.md
+essay-folder
+    index.md
+    research-paper-file.md
+dinosaur-fossils-file.md
+other-folder
+    index.md
+```
