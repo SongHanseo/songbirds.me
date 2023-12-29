@@ -20,6 +20,10 @@
         mask-position: center left;
         mask-size: contain;
         display: inline-block;
+        transition: background-color .2s;
+    }
+    > a:hover::before {
+        background-color: color-mix(in srgb,var(--tertiary)75%,transparent);
     }
 }
 
