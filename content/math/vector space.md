@@ -7,7 +7,7 @@ date: 2024-06-26
 ---
 # 정의
 
-어떤 [[field|체]] $K$에 대하여, 어떤 집합 $V$가 벡터합($+:V\times V \to V$)과 스칼라곱($\ \cdot:K \times V \to V$)이 정의되어 다음의 성질들을 만족할 때 이러한 $V$와 같은 집합을 **체 $K$ 위의 벡터공간**<sub>Vector space </sub>이라고 하고, 그 원소들을 **벡터**<sub>Vector</sub>라고 합니다.
+어떤 [[field|체]] $K$에 대하여, 어떤 공집합이 아닌 집합 $V$가 벡터합($+:V\times V \to V$)과 스칼라곱($\ \cdot:K \times V \to V$)이 정의되어 다음의 성질들을 만족할 때 이러한 $V$와 같은 집합을 **체 $K$ 위의 벡터공간**<sub>vector space </sub>이라고 하고, 그 원소들을 **벡터**<sub>vector</sub>라고 합니다.
 
 ## 성질
 
