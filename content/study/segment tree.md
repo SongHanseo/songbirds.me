@@ -3,6 +3,7 @@ title: Segment Tree와 모노이드
 date: 2024-06-02
 tags:
   - data_structure
+  - abstract_algebra
 ---
 3월 22일 학회 스터디에서 작성했던 자료를 조금 수정해 백업합니다. 정확하지 않은 내용이 있을 수 있습니다.
 # Segment Tree
