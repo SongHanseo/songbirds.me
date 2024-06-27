@@ -24,3 +24,11 @@ date: 2024-06-26
 - 분배법칙
 	- $\forall a \in K \quad \forall \mathbf{u}, \mathbf{v} \in V \quad a\cdot (\mathbf{u} + \mathbf{v}) = a \cdot \mathbf{u} + a \cdot \mathbf{v}$ (벡터합과 스칼라곱의 분배법칙)
 	- $\forall a, b \in K \quad \forall \mathbf{v} \in V \quad (a+b)\cdot \mathbf{v} = a \cdot \mathbf{v} + b \cdot \mathbf{v}$ (덧셈과 스칼라곱의 분배법칙)
+
+# 예시
+
+- 어떤 체 $K$의 $n$중쌍($n$-튜플) 집합 $K^n:=\{(a_1, a_2, \cdots, a_n)|a_1, a_2, \cdots, a_n\in K\}$은 다음과 같이 정의된 벡터합과 스칼라곱에 의해 벡터공간을 이룹니다.
+	- $+:((a_1,\cdots,a_n),(b_1,\cdots,b_n))\longmapsto (a_1+b_1,\cdots,a_n+b_n)$
+	- $\;\cdot\;: (s, (a_1, \cdots, a_n)) \longmapsto (s\cdot a_1, \cdots, s\cdot a_n)$
+	- 아마 가장 기본적으로 알려진 '벡터'는 아마 이것일 것입니다. 사실 나중에 살펴볼 *기저*와 *좌표*에 의해, $K$ 위의 유한 차원 벡터공간은 $K^n$과 동형이 됩니다. 
+- 복소수 집합 $\mathbb{C}$는 실수 집합 $\mathbb{R}$ 위의 벡터공간을 이룹니다. 벡터합과 스칼라곱은 우리가 익히 아는 그 곱셈과 덧셈으로 정의하면 됩니다. 복소수는 두 개의 실수, 실수부와 허수부로 표현할 수 있으니, 아마 실수의 순서쌍(즉, 2-튜플)과 동형임을 유추해볼 수 있을 것입니다.
