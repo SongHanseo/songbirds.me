@@ -15,7 +15,7 @@ $$ \sum^n_{i=1} a_i\mathbf{v}_i= a_1\mathbf{v}_1 + a_2\mathbf{v}_2 + \cdots + a_
 
 # 선형생성
 
-따라서 어떤 $S=\{\mathbf v_1, \cdots, \mathbf v_n\}$의 생성은 
+어떤 $S=\{\mathbf v_1, \cdots, \mathbf v_n\}$의 생성은 선형결합들의 집합입니다. 즉,
 
 $$\text{span}(S):=\left\{ \left. \sum^n_{i=1} a_i \mathbf{v}_i \ \right| \  n\in\mathbb{N},a_i\in K, \mathbf{v}_i\in S\right\}$$
 
