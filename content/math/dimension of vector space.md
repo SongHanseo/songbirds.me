@@ -19,7 +19,7 @@ $\mathbf v_1, \cdots, \mathbf v_n$가 선형독립이라고 합시다. 그러면
 
 $\mathbf v_1, \cdots, \mathbf v_{k-1}, \mathbf u_{k}, \cdots, \mathbf u_m \ (2\le k \le m-1)$이 기저를 이룬다고 합시다. 그러면 $\mathbf v_k$는 이들의 선형결합 $a_1\mathbf v_1 + \cdots + a_{k-1}\mathbf v_{k-1} + a_k \mathbf u_k + \cdots + a_m\mathbf u_m$으로 표현할 수 있습니다. 그런데 $\mathbf v_1, \cdots, \mathbf v_n$이 선형독립이라고 가정했으므로, $a_k, \cdots, a_m$중 적어도 하나는 $0$이 아닙니다. 기저의 순서를 재배열하여 이것이 $a_k$가 되도록 할 수 있습니다. 그러면 $\mathbf u_k = -(a_k)^{-1}(a_1\mathbf v_1 + \cdots + a_{k-1}\mathbf v_{k-1}-\mathbf v_k+a_{k+1}\mathbf u_{k+1}+\cdots a_m\mathbf u_m)$이 성립하여 $\mathbf v_1, \cdots, \mathbf v_k, \mathbf u_{k+1}, \cdots, \mathbf u_m$이 새로운 기저를 이루게 됩니다.
 
-마지막으로 같은 프로세스로 $\mathbf u_m$을 $\mathbf v_m$으로 대체할 수 있고, 그렇게 재귀적으로 $\mathbf v_1, \cdots, \mathbf v_m$은 기저를 이루게 됩니다. 그런데 $n>m$이라고 했으니 $\mathbf v_{m+1}$은 이들과 선형독립이어야 하는데, 그러면 기저의 정의와 모순되어 가정이 깨집니다. 따라서 $\mathbf v_1, \cdots, \mathbf v_n$은 선형종속입니다.
+마지막으로 같은 프로세스로 $\mathbf u_m$을 $\mathbf v_m$으로 대체할 수 있고, 그렇게 귀납적으로 $\mathbf v_1, \cdots, \mathbf v_m$은 기저를 이루게 됩니다. 그런데 $n>m$이라고 했으니 $\mathbf v_{m+1}$은 이들과 선형독립이어야 하는데, 그러면 기저의 정의와 모순되어 가정이 깨집니다. 따라서 $\mathbf v_1, \cdots, \mathbf v_n$은 선형종속입니다.
 
 ## 그러므로,
 
