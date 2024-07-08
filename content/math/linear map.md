@@ -11,8 +11,10 @@ tags:
 
 체 $K$ 위의 벡터공간 $V$와 $W$ 사이의 어떤 함수 $T: V \to W$가 다음을 만족할때, 이를 선형사상이라고 합니다.
 
-- $\forall \mathbf u, \mathbf v \in  V \quad T(\mathbf u + \mathbf v)=T(\mathbf u) + T(\mathbf v)$
-- $\forall a \in K \quad \forall \mathbf v \in V \quad T(a\mathbf v)=aT(\mathbf v)$
+- $\forall \mathbf u, \mathbf v \in  V \quad T(\mathbf u + \mathbf v)=T(\mathbf u) + T(\mathbf v)$ (가산성)
+- $\forall a \in K \quad \forall \mathbf v \in V \quad T(a\mathbf v)=aT(\mathbf v)$ (동차성)
+
+더 일반적으로는, 이러한 성질을 선형성이라고 하고, 선형성을 갖는 함수가 선형이라고 합니다.
 
 # 핵과 상
 
