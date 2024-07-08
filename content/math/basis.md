@@ -7,7 +7,7 @@ tags:
 ---
 # 소개
 
-어떤 유한 차원 [[vector space|벡터공간]]의 **기저**<sub>basis</sub>는 서로 *일차독립*이면서 그 벡터공간을 [[linear combination and linear span#선형생성|생성]]하는 벡터들의 집합을 말합니다.
+어떤 [[vector space|벡터공간]]의 **기저**<sub>basis</sub>는 서로 *일차독립*이면서 그 벡터공간을 [[linear combination and linear span#선형생성|생성]]하는 벡터들의 집합을 말합니다.
 
 # 선형종속, 선형독립
 
