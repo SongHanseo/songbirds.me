@@ -13,11 +13,11 @@ date: 2024-11-28
 
 이항연산 $\langle \cdot , \cdot\rangle:V \times V \to F$ 가 다음 성질을 만족할 때, 이를 내적이라고 합니다.
 
-- 1. Conjugate symmetricity (켤레대칭성)
+1. Conjugate symmetricity (켤레대칭성)
 	- $\langle\mathbf{u}, \mathbf{v}\rangle = \overline{\langle\mathbf{v}, \mathbf{u}\rangle}$ 
-- 2. Linearity in the first argument  (첫 항에 대한 선형성)
+2. Linearity in the first argument  (첫 항에 대한 선형성)
 	- $\langle a\mathbf u + b\mathbf v, \mathbf w\rangle=a\langle\mathbf u, \mathbf w\rangle+b\langle \mathbf v, \mathbf w \rangle$
-- 3. Positive-definiteness (양의 정부호성)
+3. Positive-definiteness (양의 정부호성)
 	- $\mathbf v \ne \mathbf 0 \implies \langle \mathbf v, \mathbf v \rangle > 0$
 
  또한 1과 2에 의해 다음을 얻습니다.
