@@ -4,7 +4,6 @@ tags:
   - math
   - linear_algebra
 date: 2024-11-28
-draft: "true"
 ---
 # 정의
 
