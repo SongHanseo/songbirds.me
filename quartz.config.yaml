@@ -266,13 +266,12 @@ plugins:
       position: beforeBody
       priority: 15
       display: all
-  # - source: "@quartz-community/obsidian-plugin-excalidraw"
-  #   enabled: true
-  #   options:
-  #     enableInteraction: true
-  #     darkMode: auto
-  #     exportPadding: 20
-  #   order: 50
+  - source: github:SongHanseo/quartikz
+    enabled: true
+    options:
+      showConsole: true
+      embedFontCss: true
+    order: 19
 layout:
   groups:
     toolbar:

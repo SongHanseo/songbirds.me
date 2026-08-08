@@ -1,0 +1,11 @@
+{
+  "version": "1.0.0",
+  "plugins": {
+    "quartikz": {
+      "source": "github:SongHanseo/quartikz",
+      "resolved": "https://github.com/SongHanseo/quartikz.git",
+      "commit": "6ebef3e5514dedaa025399278e64a9b94f0a53a4",
+      "installedAt": "2026-08-08T19:14:13.535Z"
+    }
+  }
+}
